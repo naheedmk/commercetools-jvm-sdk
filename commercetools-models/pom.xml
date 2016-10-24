@@ -55,7 +55,8 @@
                 <configuration>
                     <instructions>
                         <Export-Package>io.sphere.sdk.*</Export-Package>
-                        <Bundle-Activator>activator.Activator</Bundle-Activator>
+                        <!--<Bundle-Activator>activator.Activator</Bundle-Activator>-->
+                        <Embed-Dependency>dependencies</Embed-Dependency>
                     </instructions>
                 </configuration>
             </plugin>
