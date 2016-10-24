@@ -56,7 +56,8 @@
                     <instructions>
                         <Export-Package>io.sphere.sdk.*</Export-Package>
                         <!--<Bundle-Activator>activator.Activator</Bundle-Activator>-->
-                        <Embed-Dependency>dependencies</Embed-Dependency>
+                        <Import-Package>*,!org.slf4j.impl</Import-Package>
+                        <Embed-Dependency>*;scope=compile|runtime</Embed-Dependency>
                     </instructions>
                 </configuration>
             </plugin>
@@ -66,7 +67,6 @@
                     <archive>
                         <manifest>
                             <addClasspath>true</addClasspath>
-                            <mainClass>activator.Activator</mainClass>
                         </manifest>
                     </archive>
                     <descriptorRefs>
