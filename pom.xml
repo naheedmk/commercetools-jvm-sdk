@@ -335,8 +335,8 @@
                     <configuration>
                         <instructions>
                             <Export-Package>!org.slf4j.*,io.sphere.sdk.*</Export-Package>
-                            <Import-Package>!javax.activation,!javax.crypto,!javax.crypto.spec,!javax.net.ssl,!javax.security.auth.x500,!javax.security.cert,!javax.xml.parsers,!org.apache.commons.lang3.builder,!org.ietf.jgss,!org.reactivestreams,!org.w3c.dom,!org.xml.sax,!sun.security.util,!sun.security.x509,!io.netty.*,!com.typesafe.netty,!org.apache.tomcat.jni,!org.bouncycastle.asn1.x500,!org.bouncycastle.cert,!org.bouncycastle.cert.jcajce,!org.bouncycastle.jce.provider,!org.bouncycastle.operator,!org.bouncycastle.operator.jcajce,!org.eclipse.jetty.alpn,!org.eclipse.jetty.npn,!org.slf4j.*,*</Import-Package>
-                            <Embed-Dependency>!org.slf4j.*,!slf4j-api,*;scope=compile|runtime</Embed-Dependency>
+                            <Import-Package>!org.asynchttpclient,!javax.activation,!javax.crypto,!javax.crypto.spec,!javax.net.ssl,!javax.security.auth.x500,!javax.security.cert,!javax.xml.parsers,!org.apache.commons.lang3.builder,!org.ietf.jgss,!org.reactivestreams,!org.w3c.dom,!org.xml.sax,!sun.security.util,!sun.security.x509,!io.netty.*,!com.typesafe.netty,!org.apache.tomcat.jni,!org.bouncycastle.asn1.x500,!org.bouncycastle.cert,!org.bouncycastle.cert.jcajce,!org.bouncycastle.jce.provider,!org.bouncycastle.operator,!org.bouncycastle.operator.jcajce,!org.eclipse.jetty.alpn,!org.eclipse.jetty.npn,!org.slf4j.*,*</Import-Package>
+                            <Embed-Dependency>!org.slf4j.*,!slf4j-api,io.sphere.sdk.*;scope=compile|runtime</Embed-Dependency>
                         </instructions>
                     </configuration>
                 </plugin>
