@@ -108,9 +108,10 @@
                 <extensions>true</extensions>
                 <configuration>
                     <instructions>
-                        <Export-Package>io.sphere.sdk.*</Export-Package>
-                        <Import-Package>!org.asynchttpclient,!javax.activation,!javax.crypto,!javax.crypto.spec,!javax.net.ssl,!javax.security.auth.x500,!javax.security.cert,!javax.xml.parsers,!org.apache.commons.lang3.builder,!org.ietf.jgss,!org.reactivestreams,!org.w3c.dom,!org.xml.sax,!sun.security.util,!sun.security.x509,!io.netty.*,!com.typesafe.netty,!org.apache.tomcat.jni,!org.bouncycastle.asn1.x500,!org.bouncycastle.cert,!org.bouncycastle.cert.jcajce,!org.bouncycastle.jce.provider,!org.bouncycastle.operator,!org.bouncycastle.operator.jcajce,!org.eclipse.jetty.alpn,!org.eclipse.jetty.npn,!org.slf4j.*,*</Import-Package>
+                        <Export-Package>io.sphere.sdk.*,!com.typesafe.netty.*,!io.netty.*</Export-Package>
+                        <Import-Package>!org.asynchttpclient,!javax.activation,!javax.crypto,!javax.crypto.spec,!javax.net.ssl,!javax.security.auth.x500,!javax.security.cert,!javax.xml.parsers,!apache.commons.lang3.builder,!org.ietf.jgss,!org.reactivestreams,!org.w3c.dom,!org.xml.sax,!sun.security.util,!sun.security.x509,!io.netty.*,!com.typesafe.netty.*,!org.apache.tomcat.jni,!org.bouncycastle.asn1.x500,!org.bouncycastle.cert,!org.bouncycastle.cert.jcajce,!org.bouncycastle.jce.provider,!org.bouncycastle.operator,!org.bouncycastle.operator.jcajce,!org.eclipse.jetty.alpn,!org.eclipse.jetty.npn,!org.slf4j.*,!com.google.protobuf,!com.jcraft.jzlib,!com.sun.jdi,!com.sun.jdi.connect,!com.sun.jdi.event,!com.sun.jdi.request,!javax.activation,!javax.crypto,!javax.crypto.spec,!javax.net.ssl,!javax.security.auth.x500,!javax.security.cert,!javax.xml.datatype,!javax.xml.namespace,!javax.xml.parsers,!org.apache.commons.logging,!org.apache.log4j,!org.apache.tomcat.jni,!org.bouncycastle.asn1.x500,!org.bouncycastle.cert,!org.bouncycastle.cert.jcajce,!org.bouncycastle.jce.provider,!org.bouncycastle.operator,!org.bouncycastle.operator.jcajce,!org.eclipse.jetty.alpn,!org.eclipse.jetty.npn,!org.ietf.jgss,!org.jboss.marshalling,!org.slf4j,sun.misc.*;resolution:=optional,*</Import-Package>
                         <Embed-Dependency>!org.slf4j.*,!slf4j-api,*;scope=compile|runtime</Embed-Dependency>
+                        <Embed-Transitive>true</Embed-Transitive>
                     </instructions>
                 </configuration>
             </plugin>
